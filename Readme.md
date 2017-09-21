@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Evgeniy Malashenko](https://up.htmlacademy.ru/adaptive/12/user/201086).
-* Наставник: `Неизвестно`.
+* Наставник: [Степан Нарышков](https://htmlacademy.ru/profile/id95962).
 
 ---
 
