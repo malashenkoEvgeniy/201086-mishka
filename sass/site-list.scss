@@ -1,0 +1,34 @@
+.site-list {
+  display: none;
+  width: 320px;
+  margin: 0;
+  padding: 10px 30px;
+  list-style: none;
+  background-color: #ffffff;
+}
+
+.site-list__active {
+  display: block;
+}
+
+.site-list__item {
+  border-bottom: 2px solid #ececec;
+}
+
+.site-list__item a {
+  display: block;
+  color: #000000;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+  padding: 30px 75px;
+}
+
+.site-list__item:hover a {
+  opacity: 0.6;
+}
+
+.site-list__item:active a {
+  opacity: 0.3;
+}
