@@ -3,3 +3,12 @@
 @import "main-nav";
 @import "site-list";
 @import "categories";
+@import "main-presentation";
+@import "about-us";
+@import "reviews";
+@import "our-contacts";
+body {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  padding: 0;
+  margin: 0;
+}
