@@ -1,0 +1,29 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.copyright__text {
+  font-size: 19px;
+  line-height: 19px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.copyright__link {
+  position: relative;
+  font-size: 0;
+  padding: 15px;
+
+}
+
+.copyright__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: transparent url("../img/htmlacademy.svg") no-repeat 50% ;
+}

@@ -139,9 +139,11 @@
       <fieldset>
         <legend class="modal__title">Добавить  в корзину</legend>
         <span class="modal__modal-leed">Выберите размер:</span>
-        <input type="radio" id="size-s" name="size-s"><label for="size-s">s</label>
-        <input type="radio" id="size-m" name="size-m"><label for="size-m">m</label>
-        <input type="radio" id="size-l" name="size-l"><label for="size-l">l</label>
+        <div class="modal__wrap">
+          <input type="radio" id="size-s" name="size" value="size-s" checked><label for="size-s">s</label>
+          <input type="radio" id="size-m" name="size" value="size-m"><label for="size-m">m</label>
+          <input type="radio" id="size-l" name="size" value="size-l"><label for="size-l">l</label>
+        </div>
         <button class="modal__btn">Добавить</button>
       </fieldset>
     </form>
