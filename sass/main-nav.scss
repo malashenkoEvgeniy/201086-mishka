@@ -7,10 +7,9 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-}
 
-.main-nav__togle::before,
-.main-nav__togle::after {
+  &::before,
+  &::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -20,25 +19,25 @@
   background-color: #000000;
 }
 
-.main-nav__togle::before {
+  &::before {
   transform: rotate(45deg);
 }
 
-.main-nav__togle::after {
+  &::after {
   transform: rotate(-45deg);
 }
-
-.main-nav__togle-close {
+}
+.main-nav__togle--close {
   padding: 2px 11px;
   background-color: #000000;
-}
 
-.main-nav__togle-close::before {
+  &::before {
   transform: translate(0, -12px);
 }
 
-.main-nav__togle-close::after {
+  &::after {
   transform: translate(0, 9px);
+}
 }
 
 .main-nav__wrapper {

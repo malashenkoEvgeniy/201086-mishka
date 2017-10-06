@@ -1,12 +1,24 @@
 .page-header {
+  display: flex;
   min-width: 320px;
   min-height: 80px;
   border-bottom: 2px solid #ececec;
-  .page-header__logo {
-      display: block;
-      width: 87px;
-      margin: 0 auto;
-      padding: 25px;
+}
+
+.page-header__logo {
+  display: block;
+  width: 87px;
+  margin: 0 auto;
+  padding: 25px;
+  &:hover .page-header__logo-image {
+    opacity: 0.6;
+  }
+  $:active .page-header_logo-image {
+    opacity: 0.3;
+}
     }
 
+.page-header__logo-image {
+  fill: #ffffff;
+  background-color: #000000;
 }

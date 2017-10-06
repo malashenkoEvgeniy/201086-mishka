@@ -2,23 +2,22 @@
   display: flex;
   justify-content: center;
   padding: 30px;
-}
 
-.copyright__text {
+  &__text {
   font-size: 19px;
   line-height: 19px;
   font-weight: bold;
   margin-right: 10px;
 }
 
-.copyright__link {
+  &__link {
   position: relative;
   font-size: 0;
   padding: 15px;
 
-}
 
-.copyright__link::before {
+
+&::before {
   content: "";
   position: absolute;
   top: 0;
@@ -26,4 +25,6 @@
   width: 30px;
   height: 30px;
   background: transparent url("../img/htmlacademy.svg") no-repeat 50% ;
+}
+  }
 }

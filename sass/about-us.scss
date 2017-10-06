@@ -3,52 +3,71 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
+
+  &__title {
+    font-size: 25px;
+    line-height: 30px;
+
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  &__list-items {
+    position: relative;
+    display: block;
+    padding-top: 80px;
+  }
+
+  &__first {
+    width: 170px;
+    &::before {
+      background: transparent url("../img/icon-feature-flower.svg") no-repeat;
+}
 }
 
-.about-us__title {
-  font-size: 25px;
-  line-height: 30px;
+  &__second {
+    width: 200px;
+    &::before {
+      background: transparent url("../img/icon-feature-money.svg") no-repeat;
+    }
+  }
 
+  &__third {
+    width: 180px;
+    &::before {
+      background: transparent url("../img/icon-feature-heart.svg") no-repeat;
+    }
+  }
+
+  &__fourth {
+    width: 200px;
+    ::before {
+      background: transparent url("../img/icon-feature-ball.svg") no-repeat;
+    }
+  }
+
+  &_fifth {
+    width: 280px;
+    ::before {
+      background: transparent url("../img/icon-feature-rocket.svg") no-repeat;
+    }
+  }
+
+  &__sixth {
+    width: 200px;
+    ::before {
+      background: transparent url("../img/icon-feature-gift.svg") no-repeat;
+    }
+  }
 }
 
-.about-us__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-}
-
-.about-us__list li {
-  position: relative;
-  display: block;
-  padding-top: 80px;
-}
-
-.about-us__list li:first-child {
-  width: 170px;
-}
-
-.about-us__list li:nth-child(2) {
-  width: 200px;
-}
-
-.about-us__list li:nth-child(3) {
-  width: 180px;
-}
-
-.about-us__list li:nth-child(4) {
-  width: 200px;
-}
-
-.about-us__list li:nth-child(5) {
-  width: 280px;
-}
-
-.about-us__list li:nth-child(6) {
-  width: 200px;
-}
-
-.about-us__list li::before {
+.about-us__list-items {
+  &::before {
   content: "";
   position: absolute;
   top: 20px;
@@ -57,22 +76,4 @@
   height: 55px;
 }
 
-.about-us__list li:first-child::before {
-  background: transparent url("../img/icon-feature-flower.svg") no-repeat;
-}
-
-.about-us__list li:nth-child(2)::before {
-  background: transparent url("../img/icon-feature-money.svg") no-repeat;
-}
-.about-us__list li:nth-child(3)::before {
-  background: transparent url("../img/icon-feature-heart.svg") no-repeat;
-}
-.about-us__list li:nth-child(4)::before {
-  background: transparent url("../img/icon-feature-ball.svg") no-repeat;
-}
-.about-us__list li:nth-child(5)::before {
-  background: transparent url("../img/icon-feature-rocket.svg") no-repeat;
-}
-.about-us__list li:nth-child(6)::before {
-  background: transparent url("../img/icon-feature-gift.svg") no-repeat;
 }

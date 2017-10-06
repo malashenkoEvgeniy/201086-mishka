@@ -1,34 +1,33 @@
 .order {
   padding: 30px;
-}
 
-.order__title {
+
+  &__title {
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
   color: #231f20;
 }
 
-.order__description {
+  &__description {
   font-size: 13px;
   line-height: 24px;
   color: #444444;
 }
 
-.order label {
+  &__relation {
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
   color: #000000;
 }
 
-.order fieldset {
+  &__block {
   position: relative;
   border: none;
   border-top: 1px solid #63d1bb;
-}
 
-.order fieldset::before {
+    &::before {
   content: "";
   position: absolute;
   top: 2px;
@@ -37,36 +36,35 @@
   height: 10px;
   background-color: #ffffff;
 }
-
-.order__type-title,
-.order__color-title,
-.order__contacts-title{
+  }
+  &__type-title,
+  &__color-title,
+  &__contacts-title{
   font-size: 17px;
   line-height: 17px;
   text-transform: uppercase;
   color: #63d1bb;
 }
 
-.order__type,
-.order__color,
-.order__contacts{
+  &__type,
+  &__color,
+  &__contacts{
   display: flex;
   flex-direction: column;
 }
 
-.order__type input,
-.order__color input{
+  &__field-type,
+  &__field-color {
   display: none;
 }
 
-.order__type label,
-.order__color label {
+  &__relation-type,
+  &__relation-color {
   position: relative;
   padding: 10px 0 10px 40px;
-
 }
 
-.order__type label::before {
+  &__relation-type::before {
   content: "";
   position: absolute;
   top: 10px;
@@ -79,12 +77,11 @@
   box-sizing: border-box;
 }
 
-.order__type input:checked + label::before {
+  &__field-type:checked + &__relation-type::before {
   background-color: #62d1ba;
 }
 
-
-.order__color label::before {
+  &__relation-color::before {
   content: "";
   position: absolute;
   top: 10px;
@@ -95,8 +92,7 @@
   box-sizing: border-box;
 }
 
-
-.order__color input:checked + label::after {
+  &__field-color:checked + &__relation-color::after {
   content: "";
   position: absolute;
   top: 15px;
@@ -108,28 +104,26 @@
   transform: scale(0.7) rotate(-45deg);
 }
 
-.order__contacts label {
+  &__relation-contacts {
   padding: 15px 0;
 }
 
-.order__contacts input {
+  &__field-contacts {
   width: 100%;
   border: none;
-
   border-bottom: 2px solid #000000;
   padding: 10px;
 }
 
-.order .order__contacts-tel,
-.order .order__contacts-email,
-.order .order__contacts-description {
+  &__contacts-tel,
+  &__contacts-email,
+  &__contacts-description {
   position: relative;
   text-transform: uppercase;
   color: #63d1bb;
-
 }
 
-.order__contacts-tel::before {
+  &__contacts-tel::before {
   content: "";
   position: absolute;
   top: 15px;
@@ -141,7 +135,7 @@
   z-index: -1;
 }
 
-.order__contacts-email::before {
+  &__contacts-email::before {
   content: "";
   position: absolute;
   top: 15px;
@@ -153,7 +147,7 @@
   z-index: -1;
 }
 
-.order__contacts-description::before {
+  &__contacts-description::before {
   content: "";
   position: absolute;
   top: 15px;
@@ -165,17 +159,17 @@
   z-index: -1;
 }
 
-.contacts-description textarea {
+  &__field-description {
   width: 100%;
 }
 
-.order__contacts-hint {
+  &__contacts-hint {
   font-size: 14px;
   line-height: 16px;
   color: #444444;
 }
 
-.order__contacts-btn {
+  &__contacts-btn {
   display: block;
   font-size: 17px;
   line-height: 17px;
@@ -187,4 +181,5 @@
   border: 2px solid #444444;
   margin: 0 auto;
 
+}
 }

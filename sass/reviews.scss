@@ -3,20 +3,20 @@
   font-size: 15px;
   line-height: 30px;
   color: #444444;
-}
 
-.reviews__title {
+
+  &__title {
   font-size: 25px;
   font-weight: bold;
   color: #000000;
 }
 
-.reviews__item {
+  &__item {
   padding: 0;
   margin: 0;
 }
 
-.reviews__author {
+  &__author {
   display: block;
   font-size: 17px;
   line-height: 24px;
@@ -24,39 +24,37 @@
   color: #000000;
 }
 
-.reviews__author-email {
+  &__author-email {
   font-size: 17px;
   line-height: 30px;
 }
-.revievs__togle {
+  &__togle {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.revievs__togle a {
+  &__togle-link {
   width: 50%;
   border: 3px solid #ececec;
   display: block;
   margin-bottom: 20px;
 }
 
-.revievs__arrov {
+  &__arrov {
   position: relative;
   width: 200px;
   height: 3px;
   background-color: #000000;
   color: transparent;
 
-}
-
-.revievs__arrov::after {
+  &::after {
   content: "";
   position: absolute;
 
 }
-
-.reviews__btn {
+  }
+  &__btn {
   display: block;
   font-size: 18px;
   line-height: 20px;
@@ -67,4 +65,5 @@
   border: 2px solid #444444;
   padding: 15px 30px;
   text-align: center;
+}
 }

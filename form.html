@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css"
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <header class="page-header">
@@ -22,7 +23,7 @@
 </svg>
     </a>
     <nav class="main-nav">
-      <button class="main-nav__togle main-nav__togle-close" type="button">Открытие меню</button>
+      <button class="main-nav__togle main-nav__togle--close" type="button">Открытие меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -46,42 +47,43 @@
       <h1 class="order__title">Вязание на заказ</h1>
       <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form action="https://echo.htmlacademy.ru" class="order__order-form" method="get">
-        <fieldset class="order__type">
+        <fieldset class="order__type order__block">
           <legend class="order__type-title ">Тип</legend>
-          <input type="radio" name="order-type" id="accessory-interior" value="accessory-interior" checked>
-          <label for="accessory-interior">Аксессуар для  интерьера</label>
-          <input type="radio" name="order-type" id="children-toy" value="children-toy">
-          <label for="children-toy">Детская игрушка</label>
+          <input class="order__field-type" type="radio" name="order-type" id="accessory-interior" value="accessory-interior" checked>
+          <label class="order__relation order__relation-type" for="accessory-interior">Аксессуар для  интерьера</label>
+          <input class="order__field-type" type="radio" name="order-type" id="children-toy" value="children-toy">
+          <label class="order__relation order__relation-type" for="children-toy">Детская игрушка</label>
         </fieldset>
-        <fieldset class="order__color">
+        <fieldset class="order__color order__block">
           <legend class="order__color-title">Цвет</legend>
-          <input type="checkbox" id="color-white" name="color-white" checked>
-          <label for="color-white">Белый</label>
-          <input type="checkbox" id="color-gray" name="color-gray" checked>
-          <label for="color-gray">Серый</label>
-          <input type="checkbox" id="color-Tiffany" name="color-Tiffany" >
-          <label for="color-Tiffany">«Тиффани»</label>
-          <input type="checkbox" id="color-black" name="color-black" >
-          <label for="color-black">Черный</label>
-          <input type="checkbox" id="color-pink" name="color-pink" >
-          <label for="color-pink">Розовый</label>
-          <input type="checkbox" id="color-orange" name="color-orange" >
-          <label for="color-orange">Оранжевый</label>
+          <input class="order__field-color" type="checkbox" id="color-white" name="color-white" checked>
+          <label class="order__relation order__relation-color" for="color-white">Белый</label>
+          <input class="order__field-color" type="checkbox" id="color-gray" name="color-gray" checked>
+          <label class="order__relation order__relation-color" for="color-gray">Серый</label>
+          <input class="order__field-color" type="checkbox" id="color-Tiffany" name="color-Tiffany" >
+          <label class="order__relation order__relation-color" for="color-Tiffany">«Тиффани»</label>
+          <input class="order__field-color" type="checkbox" id="color-black" name="color-black" >
+          <label class="order__relation order__relation-color" for="color-black">Черный</label>
+          <input class="order__field-color" type="checkbox" id="color-pink" name="color-pink" >
+          <label class="order__relation order__relation-color" for="color-pink">Розовый</label>
+          <input class="order__field-color" type="checkbox" id="color-orange" name="color-orange" >
+          <label class="order__relation order__relation-color" for="color-orange">Оранжевый</label>
         </fieldset>
-        <fieldset class="order__contacts">
+        <fieldset class="order__contacts order__block">
           <legend class="order__contacts-title">ФИО</legend>
-          <label for="contacts-name" class="order__contacts-name">Имя:</label>
-          <input type="text" name="contacts-name" id="contacts-name" placeholder="Введите ваше имя*" required>
-          <label for="contacts-surname" class="order__contacts-surname">Фамилия:</label>
-          <input type="text" name="contacts-surname" id="contacts-surname" placeholder="Укажите фамилию*" required>
-          <label for="contacts-patronymic" class="order__contacts-patronymic">Отчество:</label>
-          <input type="text" name="contacts-patronymic" id="contacts-patronymic" placeholder="Отчество, если желаете" >
-          <label for="contacts-tel" class="order__contacts-tel">тел</label>
-          <input type="tel" name="contacts-tel" id="contacts-tel" pattern="[7]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*" required>
-          <label for="contacts-email" class="order__contacts-email">E-mail</label>
-          <input type="email" id="contacts-email" placeholder="Ваш Email*" required>
-          <label for="contacts-description" class="order__contacts-description">Доп</label>
-          <textarea id="contacts-description" cols="42" rows="10">Опишите все ваши  пожелания к заказу</textarea>
+          <label class="order__relation-contacts order__contacts-name" for="contacts-name" >Имя:</label>
+          <input class="order__field-contacts" type="text" name="contacts-name" id="contacts-name" placeholder="Введите ваше имя*" required>
+          <label class=" order__contacts-surname" for="contacts-surname" >Фамилия:</label>
+          <input class="order__field-contacts" type="text" name="contacts-surname" id="contacts-surname" placeholder="Укажите фамилию*" required>
+          <label class="order__relation-contacts order__contacts-patronymic" for="contacts-patronymic" >Отчество:
+          </label>
+          <input class="order__field-contacts" type="text" name="contacts-patronymic" id="contacts-patronymic" placeholder="Отчество, если желаете" >
+          <label class="order__relation-contacts order__contacts-tel" for="contacts-tel" >тел</label>
+          <input class="order__field-contacts" type="tel" name="contacts-tel" id="contacts-tel" pattern="[7]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*" required>
+          <label class="order__relation-contacts order__contacts-email" for="contacts-email" >E-mail</label>
+          <input class="order__field-contacts" type="email" id="contacts-email" placeholder="Ваш Email*" required>
+          <label class="order__relation-contacts order__contacts-description" for="contacts-description" >Доп</label>
+          <textarea class="order__field-description" id="contacts-description" cols="42" rows="10">Опишите все ваши  пожелания к заказу</textarea>
         </fieldset>
         <p class="order__contacts-hint">*Поля обязательны для заполнения</p>
         <button class="order__contacts-btn" type="submit" >Отправить заказ</button>

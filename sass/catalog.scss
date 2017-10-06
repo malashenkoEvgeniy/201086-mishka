@@ -1,4 +1,5 @@
-.catalog__title {
+.catalog
+&__title {
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
@@ -7,28 +8,27 @@
   text-align: center;
   background-color: #f1f1f1;
   box-sizing: border-box;
-}
 
-.catalog__wrap {
+  &__wrap {
   padding: 30px;
 }
 
-.catalog__item {
+  &__item {
   border: 1px solid #ececec;
   margin-bottom: 30px;
 }
 
-.catalog__item-image {
+  &__item-image {
   width: 100%;
   margin-bottom: 25px;
 }
 
-.catalog__item-title{
+  &__item-title{
   padding: 0;
   margin: 0;
 }
 
-.catalog__item-title a {
+  &__title-link {
   display: block;
   font-size: 17px;
   line-height: 24px;
@@ -38,7 +38,7 @@
   padding-left: 30px;
 }
 
-.catalog__item-description {
+  &__item-description {
   display: block;
   font-size: 13px;
   line-height: 23px;
@@ -47,7 +47,7 @@
   margin-bottom: 30px;
 }
 
-.catalog__presentation {
+  &__presentation {
   display: flex;
   justify-content: space-between;
   width: 80%;
@@ -56,20 +56,20 @@
   border-top: 1px solid #444444;
 }
 
-.catalog__price {
+  &__price {
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
   color: #000000;
 }
 
-.catalog__bascket {
+  &__bascket {
   position: relative;
   font-size: 0;
   padding: 11px;
-}
 
-.catalog__bascket::before {
+
+  &::before {
   content: "";
   position: absolute;
   top: 0;
@@ -77,4 +77,6 @@
   width: 22px;
   height: 22px;
   background: transparent url("../img/icon-cart.svg") no-repeat ;
+}
+  }
 }
