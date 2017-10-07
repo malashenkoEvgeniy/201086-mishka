@@ -1,33 +1,36 @@
 $greenFon: #63d1bb;
 
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+
 .categories__separator {
   display: block;
 }
 
-.categories__item {
-  &:first-child {
-    min-height: 355px;
-    background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat;
-    background-size: cover;
-    padding-top: 75px;
-    box-sizing: border-box;
-    text-align: center;
-  }
-
-  &:nth-child(2),
-  &:nth-child(3) {
-    position: relative;
-    transform: translateY(-90px);
-    width: 100%;
-    background-color: $greenFon;
-    z-index: 1;
-  }
-
-  &:nth-child(3) {
-    background-color: darken($greenFon, 10%);
-  }
-
+.categories__item:first-child {
+  min-height: 355px;
+  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat;
+  background-size: cover;
+  padding-top: 75px;
+  box-sizing: border-box;
+  text-align: center;
 }
+
+.categories__item:nth-child(2),
+.categories__item:nth-child(3) {
+  position: relative;
+  transform: translateY(-90px);
+  width: 100%;
+  background-color: $greenFon;
+  z-index: 1;
+}
+
+.categories__item:nth-child(3) {
+  background-color: darken($greenFon, 10%);
+}
+
 .categories__item-link {
   position: relative;
   display: inline-block;
@@ -40,18 +43,17 @@ $greenFon: #63d1bb;
   line-height: 24px;
   font-weight: bold;
 
-
-
   &::before {
-  content:"";
-  position: absolute;
-  top: 20px;
-  right: -300px;
-  width: 40px;
-  height: 62px;
-  background-color: red;
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -300px;
+    width: 40px;
+    height: 62px;
+    background-color: red;
+  }
 }
-}
+
 .categories__item:nth-child(2) .categories__item-link::before {
   background: transparent url("../img/icon-interior.svg") no-repeat;
 }

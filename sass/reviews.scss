@@ -3,20 +3,20 @@
   font-size: 15px;
   line-height: 30px;
   color: #444444;
+}
 
-
-  &__title {
+.reviews__title {
   font-size: 25px;
   font-weight: bold;
   color: #000000;
 }
 
-  &__item {
+.reviews__item {
   padding: 0;
   margin: 0;
 }
 
-  &__author {
+.reviews__author {
   display: block;
   font-size: 17px;
   line-height: 24px;
@@ -24,24 +24,25 @@
   color: #000000;
 }
 
-  &__author-email {
+.reviews__author-email {
   font-size: 17px;
   line-height: 30px;
 }
-  &__togle {
+
+.reviews__togle {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-  &__togle-link {
+.reviews__togle-link {
   width: 50%;
   border: 3px solid #ececec;
   display: block;
   margin-bottom: 20px;
 }
 
-  &__arrov {
+.reviews__arrov {
   position: relative;
   width: 200px;
   height: 3px;
@@ -49,12 +50,12 @@
   color: transparent;
 
   &::after {
-  content: "";
-  position: absolute;
-
-}
+    content: "";
+    position: absolute;
   }
-  &__btn {
+}
+
+.reviews__btn {
   display: block;
   font-size: 18px;
   line-height: 20px;
@@ -65,5 +66,4 @@
   border: 2px solid #444444;
   padding: 15px 30px;
   text-align: center;
-}
 }

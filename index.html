@@ -23,7 +23,9 @@
 </svg>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__togle main-nav__togle--close" type="button">Открытие меню</button>
+        <button class="main-nav__btn" type="button">
+          <span class="main-nav__togle main-nav__togle--close" >Открытие меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -108,11 +110,11 @@
           <a href="#" class="our-contacts__email-adress">info@mimimishkashop.ru</a>
         </div>
         <div class="our-contacts__adress">
-          <span class="our-contacts__adress-tile">адрес:</span>
+          <span class="our-contacts__adress-title">адрес:</span>
           <span class="our-contacts__mailing-adress">г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101</span>
         </div>
         <div class="our-contacts__in-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651616!2d30.320894615975973!3d59.938794181876204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1506259788589" width="600" height="450" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651616!2d30.320894615975973!3d59.938794181876204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1506259788589" width="100%" height="450"  allowfullscreen></iframe>
         </div>
         <a href="feedback.html" class="our-contacts__write-us">Напишите нам</a>
       </section>
@@ -139,13 +141,13 @@
       </div>
     </footer>
     <form action="https://echo.htmlacademy.ru" class="modal" method="post">
-      <fieldset>
+      <fieldset class="modal__block">
         <legend class="modal__title">Добавить  в корзину</legend>
         <span class="modal__modal-leed">Выберите размер:</span>
         <div class="modal__wrap">
-          <input type="radio" id="size-s" name="size" value="size-s" checked><label for="size-s">s</label>
-          <input type="radio" id="size-m" name="size" value="size-m"><label for="size-m">m</label>
-          <input type="radio" id="size-l" name="size" value="size-l"><label for="size-l">l</label>
+          <input class="modal__field" type="radio" id="size-s" name="size" value="size-s" checked><label class="modal__relation" for="size-s">s</label>
+          <input class="modal__field" type="radio" id="size-m" name="size" value="size-m"><label class="modal__relation" for="size-m">m</label>
+          <input class="modal__field" type="radio" id="size-l" name="size" value="size-l"><label class="modal__relation" for="size-l">l</label>
         </div>
         <button class="modal__btn">Добавить</button>
       </fieldset>

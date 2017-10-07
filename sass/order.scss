@@ -1,70 +1,71 @@
 .order {
   padding: 30px;
+}
 
-
-  &__title {
+.order__title {
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
   color: #231f20;
 }
 
-  &__description {
+.order__description {
   font-size: 13px;
   line-height: 24px;
   color: #444444;
 }
 
-  &__relation {
+.order__relation {
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
   color: #000000;
 }
 
-  &__block {
+.order__block {
   position: relative;
   border: none;
   border-top: 1px solid #63d1bb;
 
-    &::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: -5px;
-  width: 20px;
-  height: 10px;
-  background-color: #ffffff;
-}
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -5px;
+    width: 20px;
+    height: 10px;
+    background-color: #ffffff;
   }
-  &__type-title,
-  &__color-title,
-  &__contacts-title{
+}
+
+.order__type-title,
+.order__color-title,
+.order__contacts-title {
   font-size: 17px;
   line-height: 17px;
   text-transform: uppercase;
   color: #63d1bb;
 }
 
-  &__type,
-  &__color,
-  &__contacts{
+.order__type,
+.order__color,
+.order__contacts {
   display: flex;
   flex-direction: column;
 }
 
-  &__field-type,
-  &__field-color {
+.order__field-type,
+.order__field-color {
   display: none;
 }
 
-  &__relation-type,
-  &__relation-color {
+.order__relation-type,
+.order__relation-color {
   position: relative;
   padding: 10px 0 10px 40px;
 }
 
-  &__relation-type::before {
+.order__relation-type::before {
   content: "";
   position: absolute;
   top: 10px;
@@ -72,16 +73,16 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  box-shadow: 0px 0px 0px 2px #000000;
+  box-shadow: 0 0 0 2px #000000;
   border: 7px solid white;
   box-sizing: border-box;
 }
 
-  &__field-type:checked + &__relation-type::before {
+.order__field-type:checked + &__relation-type::before {
   background-color: #62d1ba;
 }
 
-  &__relation-color::before {
+.order__relation-color::before {
   content: "";
   position: absolute;
   top: 10px;
@@ -92,7 +93,7 @@
   box-sizing: border-box;
 }
 
-  &__field-color:checked + &__relation-color::after {
+.order__field-color:checked + .order__relation-color::after {
   content: "";
   position: absolute;
   top: 15px;
@@ -104,26 +105,26 @@
   transform: scale(0.7) rotate(-45deg);
 }
 
-  &__relation-contacts {
+.order__relation-contacts {
   padding: 15px 0;
 }
 
-  &__field-contacts {
+.order__field-contacts {
   width: 100%;
   border: none;
   border-bottom: 2px solid #000000;
   padding: 10px;
 }
 
-  &__contacts-tel,
-  &__contacts-email,
-  &__contacts-description {
+.order__contacts-tel,
+.order__contacts-email,
+.order__contacts-description {
   position: relative;
   text-transform: uppercase;
   color: #63d1bb;
 }
 
-  &__contacts-tel::before {
+.order__contacts-tel::before {
   content: "";
   position: absolute;
   top: 15px;
@@ -135,7 +136,7 @@
   z-index: -1;
 }
 
-  &__contacts-email::before {
+.order__contacts-email::before {
   content: "";
   position: absolute;
   top: 15px;
@@ -147,7 +148,7 @@
   z-index: -1;
 }
 
-  &__contacts-description::before {
+.order__contacts-description::before {
   content: "";
   position: absolute;
   top: 15px;
@@ -159,17 +160,17 @@
   z-index: -1;
 }
 
-  &__field-description {
+.order__field-description {
   width: 100%;
 }
 
-  &__contacts-hint {
+.order__contacts-hint {
   font-size: 14px;
   line-height: 16px;
   color: #444444;
 }
 
-  &__contacts-btn {
+.order__contacts-btn {
   display: block;
   font-size: 17px;
   line-height: 17px;
@@ -180,6 +181,4 @@
   background-color: transparent;
   border: 2px solid #444444;
   margin: 0 auto;
-
-}
 }

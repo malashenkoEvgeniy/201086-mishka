@@ -1,10 +1,10 @@
 .main-presentation {
   margin-top: -90px;
   padding: 35px 30px;
-  border-bottom: 20px solid  gray;
+  border-bottom: 20px solid gray;
+}
 
-
-  &__title {
+.main-presentation__title {
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
@@ -12,43 +12,43 @@
   margin-bottom: 0;
 }
 
-  &__leed {
+.main-presentation__leed {
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
   color: #63d1bb;
 }
 
-  &__description {
+.main-presentation__description {
   width: 250px;
   font-size: 15px;
   line-height: 24px;
 }
 
-  &__characteristics {
+.main-presentation__characteristics {
   width: 100%;
   border-collapse: collapse;
 }
 
-  &__characteristics td {
+.main-presentation__characteristics td {
   border-bottom: 2px solid #ececec;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-  &__image {
+.main-presentation__image {
   display: block;
   width: 100%;
   margin: 0 auto;
 }
 
-  &__price {
+.main-presentation__price {
   display: block;
   text-align: center;
   padding: 30px;
 }
 
-  &__btn {
+.main-presentation__btn {
   width: 100%;
   font-size: 17px;
   line-height: 20px;
@@ -59,4 +59,4 @@
   background-color: transparent;
   padding: 15px 30px;
 }
-}
+

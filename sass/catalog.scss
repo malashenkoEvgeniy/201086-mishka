@@ -1,5 +1,4 @@
-.catalog
-&__title {
+.catalog__title {
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
@@ -8,75 +7,72 @@
   text-align: center;
   background-color: #f1f1f1;
   box-sizing: border-box;
+}
+.catalog__wrap {
+    padding: 30px;
+  }
 
-  &__wrap {
-  padding: 30px;
+.catalog__item {
+    border: 1px solid #ececec;
+    margin-bottom: 30px;
+  }
+
+.catalog__item-image {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+.catalog__item-title{
+    padding: 0;
+    margin: 0;
+  }
+
+.catalog__title-link {
+    display: block;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    padding-left: 30px;
 }
 
-  &__item {
-  border: 1px solid #ececec;
-  margin-bottom: 30px;
-}
+.catalog__item-description {
+    display: block;
+    font-size: 13px;
+    line-height: 23px;
+    color: #444444;
+    padding-left: 30px;
+    margin-bottom: 30px;
+  }
 
-  &__item-image {
-  width: 100%;
-  margin-bottom: 25px;
-}
+.catalog__presentation {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    border-top: 1px solid #444444;
+  }
 
-  &__item-title{
-  padding: 0;
-  margin: 0;
-}
+.catalog__price {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #000000;
+  }
 
-  &__title-link {
-  display: block;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: bold;
-  color: #000000;
-  text-decoration: none;
-  padding-left: 30px;
-}
-
-  &__item-description {
-  display: block;
-  font-size: 13px;
-  line-height: 23px;
-  color: #444444;
-  padding-left: 30px;
-  margin-bottom: 30px;
-}
-
-  &__presentation {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: 0 auto;
-  padding: 30px;
-  border-top: 1px solid #444444;
-}
-
-  &__price {
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: bold;
-  color: #000000;
-}
-
-  &__bascket {
+.catalog__bascket {
   position: relative;
   font-size: 0;
   padding: 11px;
 
-
   &::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 22px;
-  height: 22px;
-  background: transparent url("../img/icon-cart.svg") no-repeat ;
-}
-  }
-}
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    background: transparent url("../img/icon-cart.svg") no-repeat;
+  } }

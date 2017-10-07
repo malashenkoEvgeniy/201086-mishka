@@ -1,28 +1,30 @@
 .site-list {
   display: none;
-  min-width: 320px;
+  max-width: 320px;
   margin: 0;
   padding: 10px 30px;
   list-style: none;
   background-color: #ffffff;
-  z-index: 5;
+  z-index: 99;
 
   &--active {
-  display: block;
+    display: block;
+  }
 }
 
-  &__item {
+.site-list__item {
   border-bottom: 2px solid #ececec;
-    &:hover .site-list__item-link {
-      opacity: 0.6;
-    }
 
-    .&:active .site-list__item-link {
-      opacity: 0.3;
-    }
+  &:hover .site-list__item-link {
+    opacity: 0.6;
+  }
+
+  &:active .site-list__item-link {
+    opacity: 0.3;
+  }
 }
 
-  &__item-link {
+.site-list__item-link {
   display: block;
   color: #000000;
   font-weight: bold;
@@ -31,4 +33,4 @@
   text-decoration: none;
   padding: 30px 75px;
 }
-}
+

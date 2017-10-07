@@ -105,16 +105,18 @@
         </div>
       </div>
     </footer>
-    <form action="https://echo.htmlacademy.ru" class="modal" method="post">
-      <fieldset>
-        <legend class="modal__title">Добавить  в корзину</legend>
-        <span class="modal__modal-leed">Выберите размер:</span>
-        <input type="radio" id="size-s" name="size-s"><label for="size-s">s</label>
-        <input type="radio" id="size-m" name="size-m"><label for="size-m">m</label>
-        <input type="radio" id="size-l" name="size-l"><label for="size-l">l</label>
-        <button class="modal__btn">Добавить</button>
-      </fieldset>
-    </form>
+  <form action="https://echo.htmlacademy.ru" class="modal" method="post">
+    <fieldset class="modal__block">
+      <legend class="modal__title">Добавить  в корзину</legend>
+      <span class="modal__modal-leed">Выберите размер:</span>
+      <div class="modal__wrap">
+        <input class="modal__field" type="radio" id="size-s" name="size" value="size-s" checked><label class="modal__relation" for="size-s">s</label>
+        <input class="modal__field" type="radio" id="size-m" name="size" value="size-m"><label class="modal__relation" for="size-m">m</label>
+        <input class="modal__field" type="radio" id="size-l" name="size" value="size-l"><label class="modal__relation" for="size-l">l</label>
+      </div>
+      <button class="modal__btn">Добавить</button>
+    </fieldset>
+  </form>
   <script src="js/script.js"></script>
   </body>
 </html>

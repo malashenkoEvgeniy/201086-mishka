@@ -1,7 +1,18 @@
-.main-nav__togle {
+.main-nav__btn {
   position: absolute;
   right: 40px;
-  top: 40px;
+  top: 30px;
+  width: 25px;
+  height: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.main-nav__togle {
+  position: absolute;
+  right: 0;
+  top: 0;
   font-size: 0;
   padding: 11px;
   background-color: transparent;
@@ -10,37 +21,44 @@
 
   &::before,
   &::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 22px;
-  height: 4px;
-  background-color: #000000;
-}
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 22px;
+    height: 4px;
+    background-color: #000000;
+  }
 
   &::before {
-  transform: rotate(45deg);
-}
+    transform: rotate(45deg);
+  }
 
   &::after {
-  transform: rotate(-45deg);
-}
-}
-.main-nav__togle--close {
-  padding: 2px 11px;
-  background-color: #000000;
+    transform: rotate(-45deg);
+  }
 
-  &::before {
-  transform: translate(0, -12px);
-}
+  &--close {
+    display: block;
+    padding: 2px 6px;
+    margin-top: 8px;
+    width: 11px;
+    height: 1px;
+    background-color: #000000;
 
-  &::after {
-  transform: translate(0, 9px);
-}
+
+    &::before {
+      transform: translate(0, -10px);
+    }
+
+    &::after {
+      transform: translate(0, 7px);
+    }
+  }
 }
 
 .main-nav__wrapper {
   position: absolute;
   top: 100px;
+  left: 1px;
 }

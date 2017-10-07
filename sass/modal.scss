@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-.modal fieldset {
+.modal__block {
   border: none;
 }
 
@@ -37,22 +37,19 @@
   margin-bottom: 20px;
 }
 
-.modal__wrap input[type="radio"] {
+.modal__field {
   display: none;
 }
 
-.modal__wrap label {
+.modal__relation {
   border: 1px solid #ececec;
   padding: 10px 20px;
   margin-right: 5px;
 }
 
-#size-s:checked + label[for="size-s"],
-#size-m:checked + label[for="size-m"],
-#size-l:checked + label[for="size-l"]{
+.modal__field:checked + .modal__relation {
   border-color: #63d1bb;
 }
-
 
 .modal__btn {
   display: block;
