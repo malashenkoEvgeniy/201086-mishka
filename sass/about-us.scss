@@ -20,6 +20,15 @@
   position: relative;
   display: block;
   padding-top: 80px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 55px;
+    height: 55px;
+  }
 }
 
 .about-us__first {
@@ -54,7 +63,7 @@
   }
 }
 
-.about-us_fifth {
+.about-us__fifth {
   width: 280px;
 
   &::before {
@@ -68,14 +77,4 @@
   &::before {
     background: transparent url("../img/icon-feature-gift.svg") no-repeat;
   }
-}
-
-.about-us__list-items {
-  &::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: 10px;
-  width: 55px;
-  height: 55px;
 }

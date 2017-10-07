@@ -8,59 +8,64 @@
   background-color: #f1f1f1;
   box-sizing: border-box;
 }
+
 .catalog__wrap {
-    padding: 30px;
-  }
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
 
 .catalog__item {
-    border: 1px solid #ececec;
-    margin-bottom: 30px;
+  border: 1px solid #ececec;
+  margin-bottom: 30px;
+  text-decoration: none;
+
+  &:hover {
+    box-shadow: 0 0 6px 10px rgba(0, 0, 0, 0.1);
   }
+
+  &:active {
+    box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+}
 
 .catalog__item-image {
-    width: 100%;
-    margin-bottom: 25px;
-  }
+  width: 100%;
+  margin-bottom: 25px;
+}
 
-.catalog__item-title{
-    padding: 0;
-    margin: 0;
-  }
-
-.catalog__title-link {
-    display: block;
-    font-size: 17px;
-    line-height: 24px;
-    font-weight: bold;
-    color: #000000;
-    text-decoration: none;
-    padding-left: 30px;
+.catalog__item-title {
+  display: block;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+  padding-left: 30px;
 }
 
 .catalog__item-description {
-    display: block;
-    font-size: 13px;
-    line-height: 23px;
-    color: #444444;
-    padding-left: 30px;
-    margin-bottom: 30px;
-  }
+  display: block;
+  font-size: 13px;
+  line-height: 23px;
+  color: #444444;
+  padding-left: 30px;
+  border-bottom: 1px solid #444444;
+}
 
 .catalog__presentation {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
-    padding: 30px;
-    border-top: 1px solid #444444;
-  }
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+}
 
 .catalog__price {
-    font-size: 15px;
-    line-height: 24px;
-    font-weight: bold;
-    color: #000000;
-  }
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+}
 
 .catalog__bascket {
   position: relative;
@@ -75,4 +80,28 @@
     width: 22px;
     height: 22px;
     background: transparent url("../img/icon-cart.svg") no-repeat;
-  } }
+  }
+}
+
+.catalog__bascket-btn {
+  width: 100%;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #444444;
+  border: 2px solid #444444;
+  background-color: transparent;
+  padding: 15px 30px;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: #ffffff;
+    background-color: #444444;
+    opacity: 0.3;
+  }
+}

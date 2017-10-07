@@ -23,7 +23,9 @@
 </svg>
     </a>
     <nav class="main-nav">
-      <button class="main-nav__togle main-nav__togle--close" type="button">Открытие меню</button>
+      <button class="main-nav__btn" type="button">
+        <span class="main-nav__togle main-nav__togle--close" >Открытие меню</span>
+      </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -46,33 +48,31 @@
     <section class="catalog">
       <h1 class="catalog__title">Каталог товаров</h1>
       <div class="catalog__wrap">
-      <article class="catalog__item">
-        <a href="#"><img src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик" class="catalog__item-image"></a>
-        <h2 class="catalog__item-title"><a class="catalog__title-link" href="#">Зайчик-попрыгайчик</a></h2>
-        <span class="catalog__item-description">Рост 30 см, вес 200 г</span>
-        <div class="catalog__presentation">
-          <span class="catalog__price">1 200 руб.</span>
-          <a href="#" class="catalog__bascket">В корзину</a>
-        </div>
-      </article>
-      <article class="catalog__item">
-        <a href="#"><img src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195" class="catalog__item-image"></a>
-        <h2 class="catalog__item-title"><a class="catalog__title-link" href="#">Корзинка для белья</a></h2>
-        <span class="catalog__item-description">Диаметр 15 см, высота 10 см</span>
-        <div class="catalog__presentation">
-          <span class="catalog__price">690 руб.</span>
-          <a href="#" class="catalog__bascket">В корзину</a>
-        </div>
-      </article>
-      <article class="catalog__item">
-        <a href="#"><img src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек" class="catalog__item-image"></a>
-        <h2 class="catalog__item-title"><a class="catalog__title-link" href="#">Большая корзинка для игрушек</a></h2>
-        <span class="catalog__item-description">Диаметр 30 см, высота 30 см</span>
-        <div class="catalog__presentation">
-          <span class="catalog__price">1 500 руб.</span>
-          <a href="#" class="catalog__bascket">В корзину</a>
-        </div>
-      </article>
+        <a class="catalog__item" href="#">
+          <img src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик" class="catalog__item-image">
+          <h2 class="catalog__item-title">Зайчик-попрыгайчик</h2>
+          <span class="catalog__item-description">Рост 30 см, вес 200 г</span>
+          <div class="catalog__presentation">
+            <span class="catalog__price">1 200 руб.</span>
+            <span class="catalog__bascket">В корзину</span>
+          </div>
+        </a>
+        <a class="catalog__item" href="#"><img src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195" class="catalog__item-image">
+          <h2 class="catalog__item-title">Корзинка для белья</h2>
+          <span class="catalog__item-description">Диаметр 15 см, высота 10 см</span>
+          <div class="catalog__presentation">
+            <span class="catalog__price">690 руб.</span>
+            <span class="catalog__bascket">В корзину</span>
+          </div>
+        </a>
+        <a class="catalog__item" href="#"><img src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек" class="catalog__item-image">
+          <h2 class="catalog__item-title">Большая корзинка для игрушек</h2>
+          <span class="catalog__item-description">Диаметр 30 см, высота 30 см</span>
+          <div class="catalog__presentation">
+            <span class="catalog__price">1 500 руб.</span>
+            <span class="catalog__bascket">В корзину</span>
+          </div>
+        </a>
       <article class="catalog__item">
         <h2 class="catalog__title-video">Процесс производства</h2>
         <video src="#" class="catalog__item-video" controls preload="metadata" poster="../img/video-mobile@1x.jpg"></video>

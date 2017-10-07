@@ -1,8 +1,11 @@
 .our-contacts {
-  padding: 30px;
   font-size: 15px;
   line-height: 30px;
   color: #444444;
+}
+
+.our-contacts__wrap {
+  padding: 30px;
 }
 
 .our-contacts__title {
@@ -21,7 +24,8 @@
 
 .our-contacts__email-title,
 .our-contacts__adress-tile {
-  padding-right: 50px;
+  padding-right: 10px;
+  margin-right: 20px;
 }
 
 .our-contacts__email-adress {
@@ -34,6 +38,7 @@
 
 .our-contacts__mailing-adress {
   width: 145px;
+  margin-left: 30px;
 }
 
 .our-contacts__write-us {
@@ -47,4 +52,20 @@
   border: 2px solid #444444;
   padding: 15px 30px;
   text-align: center;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: #ffffff;
+    background-color: #444444;
+    opacity: 0.3;
+  }
+}
+
+.our-contacts__map {
+  width: 100%;
+  height: 450px;
 }

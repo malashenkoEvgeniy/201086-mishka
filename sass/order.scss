@@ -15,6 +15,11 @@
   color: #444444;
 }
 
+.order__order-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .order__relation {
   font-size: 17px;
   line-height: 18px;
@@ -45,6 +50,8 @@
   line-height: 17px;
   text-transform: uppercase;
   color: #63d1bb;
+  padding-left: 5px;
+  padding-right: 20px;
 }
 
 .order__type,
@@ -78,7 +85,7 @@
   box-sizing: border-box;
 }
 
-.order__field-type:checked + &__relation-type::before {
+.order__field-type:checked + .order__relation-type::before {
   background-color: #62d1ba;
 }
 

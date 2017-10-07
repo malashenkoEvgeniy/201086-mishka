@@ -3,6 +3,9 @@
   font-size: 15px;
   line-height: 30px;
   color: #444444;
+  border-bottom: 10px solid gray;
+  border-image-source: url("../img/zigzag-line-desktop.svg");
+  border-image-slice: 50;
 }
 
 .reviews__title {
@@ -29,30 +32,39 @@
   line-height: 30px;
 }
 
-.reviews__togle {
+.revievs__togle {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-content: center;
 }
 
-.reviews__togle-link {
+.revievs__togle-link {
   width: 50%;
   border: 3px solid #ececec;
   display: block;
   margin-bottom: 20px;
 }
 
-.reviews__arrov {
-  position: relative;
-  width: 200px;
-  height: 3px;
-  background-color: #000000;
-  color: transparent;
+.revievs__arrov-back {
+  font-size: 0;
+  padding: 10px 65px;
+  background: transparent url("../img/huge-arrow-left.svg") no-repeat 40px -1px;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-  }
+
+.revievs__arrov-forward {
+  font-size: 0;
+  padding: 10px 65px;
+  background: transparent url("../img/huge-arrow-right.svg") no-repeat 40px -1px;
+}
+
+.revievs__togle-link:hover .revievs__arrov {
+  opacity: 0.6;
+}
+
+.revievs__togle-link:active .revievs__arrov {
+  opacity: 0.3;
 }
 
 .reviews__btn {
@@ -66,4 +78,15 @@
   border: 2px solid #444444;
   padding: 15px 30px;
   text-align: center;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: #ffffff;
+    background-color: #444444;
+    opacity: 0.3;
+  }
 }

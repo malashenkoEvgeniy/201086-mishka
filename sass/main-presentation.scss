@@ -1,7 +1,9 @@
 .main-presentation {
   margin-top: -90px;
   padding: 35px 30px;
-  border-bottom: 20px solid gray;
+  border-bottom: 10px solid gray;
+  border-image-source: url("../img/zigzag-line-desktop.svg");
+  border-image-slice: 50;
 }
 
 .main-presentation__title {
@@ -58,5 +60,15 @@
   border: 2px solid #444444;
   background-color: transparent;
   padding: 15px 30px;
-}
 
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: #ffffff;
+    background-color: #444444;
+    opacity: 0.3;
+  }
+}
