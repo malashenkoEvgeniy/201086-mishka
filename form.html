@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -63,7 +64,7 @@
           <input class="order__field-color" type="checkbox" id="color-gray" name="color-gray" checked>
           <label class="order__relation order__relation-color" for="color-gray">Серый</label>
           <input class="order__field-color" type="checkbox" id="color-Tiffany" name="color-Tiffany" >
-          <label class="order__relation order__relation-color" for="color-Tiffany">«Тиффани»</label>
+          <label class="order__relation order__relation-color order__color-tiffany" for="color-Tiffany">«Тиффани»</label>
           <input class="order__field-color" type="checkbox" id="color-black" name="color-black" >
           <label class="order__relation order__relation-color" for="color-black">Черный</label>
           <input class="order__field-color" type="checkbox" id="color-pink" name="color-pink" >
@@ -75,7 +76,7 @@
           <legend class="order__contacts-title">ФИО</legend>
           <label class="order__relation-contacts order__contacts-name" for="contacts-name" >Имя:</label>
           <input class="order__field-contacts" type="text" name="contacts-name" id="contacts-name" placeholder="Введите ваше имя*" required>
-          <label class=" order__contacts-surname" for="contacts-surname" >Фамилия:</label>
+          <label class="order__relation-contacts  order__contacts-surname" for="contacts-surname" >Фамилия:</label>
           <input class="order__field-contacts" type="text" name="contacts-surname" id="contacts-surname" placeholder="Укажите фамилию*" required>
           <label class="order__relation-contacts order__contacts-patronymic" for="contacts-patronymic" >Отчество:
           </label>
@@ -85,7 +86,7 @@
           <label class="order__relation-contacts order__contacts-email" for="contacts-email" >E-mail</label>
           <input class="order__field-contacts" type="email" id="contacts-email" placeholder="Ваш Email*" required>
           <label class="order__relation-contacts order__contacts-description" for="contacts-description" >Доп</label>
-          <textarea class="order__field-description" id="contacts-description" cols="42" rows="10">Опишите все ваши  пожелания к заказу</textarea>
+          <textarea class="order__field-description" id="contacts-description" cols="200" rows="7">Опишите все ваши  пожелания к заказу</textarea>
         </fieldset>
         <p class="order__contacts-hint">*Поля обязательны для заполнения</p>
         <button class="order__contacts-btn" type="submit" >Отправить заказ</button>
@@ -108,7 +109,7 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
+          <b class="copyright__text">Разработано</b>
           <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>

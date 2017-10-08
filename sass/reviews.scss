@@ -4,13 +4,14 @@
   line-height: 30px;
   color: #444444;
   border-bottom: 10px solid gray;
-  border-image-source: url("../img/zigzag-line-desktop.svg");
+  /*border-image-source: url("");*/
   border-image-slice: 50;
+  padding-bottom: 40px;
 }
 
 .reviews__title {
   font-size: 25px;
-  font-weight: bold;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   color: #000000;
 }
 
@@ -19,44 +20,54 @@
   margin: 0;
 }
 
+.reviews__text {
+  padding-bottom: 0;
+  margin-bottom: 27px;
+}
+
 .reviews__author {
   display: block;
   font-size: 17px;
   line-height: 24px;
-  font-weight: bold;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-style: normal;
   color: #000000;
+  padding-bottom: 5px;
 }
 
 .reviews__author-email {
+  display: block;
   font-size: 17px;
   line-height: 30px;
+  margin-bottom: 28px;
 }
 
 .revievs__togle {
   width: 100%;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-content: center;
+  margin-bottom: 40px;
 }
 
 .revievs__togle-link {
   width: 50%;
-  border: 3px solid #ececec;
+  border: 1px solid #ececec;
   display: block;
-  margin-bottom: 20px;
 }
 
 .revievs__arrov-back {
   font-size: 0;
-  padding: 10px 65px;
-  background: transparent url("../img/huge-arrow-left.svg") no-repeat 40px -1px;
+  padding: 15px 65px;
+  background: green /*url("") no-repeat 40px -1px*/;
 }
 
 
 .revievs__arrov-forward {
   font-size: 0;
-  padding: 10px 65px;
-  background: transparent url("../img/huge-arrow-right.svg") no-repeat 40px -1px;
+  padding: 15px 65px;
+  background: gray /*url("") no-repeat 40px -1px*/;
 }
 
 .revievs__togle-link:hover .revievs__arrov {
@@ -71,7 +82,7 @@
   display: block;
   font-size: 18px;
   line-height: 20px;
-  font-weight: bold;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   color: #444444;

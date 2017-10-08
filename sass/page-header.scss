@@ -11,6 +11,8 @@
   width: 87px;
   margin: 0 auto;
   padding: 25px;
+  padding-top: 22px;
+  padding-bottom: 20px;
 
   &:hover .page-header__logo-image {
     opacity: 0.6;
@@ -19,9 +21,4 @@
   &:active .page-header_logo-image {
     opacity: 0.3;
   }
-}
-
-.page-header__logo-image {
-  fill: #ffffff;
-  background-color: #000000;
 }

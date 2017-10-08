@@ -18,7 +18,7 @@
   width: 150px;
   font-size: 25px;
   line-height: 30px;
-  font-weight: bold;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   text-transform: uppercase;
   text-align: center;
 }
@@ -53,11 +53,12 @@
 
 .modal__btn {
   display: block;
-  width: 100%;
-  padding: 15px 20px;
+  width: 220px;
+  padding: 15px;
+  margin: 0 auto;
   font-size: 17px;
   line-height: 17px;
-  font-weight: bold;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   color: #ffffff;
   background-color: #63d1bb;
   border: none;

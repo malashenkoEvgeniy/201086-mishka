@@ -1,18 +1,22 @@
 .order {
-  padding: 30px;
+  padding: 0;
 }
 
 .order__title {
   font-size: 27px;
   line-height: 30px;
-  font-weight: bold;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  padding: 70px 35px;
+  margin: 0;
   color: #231f20;
+  background-color: #f1f1f1;
 }
 
 .order__description {
   font-size: 13px;
   line-height: 24px;
   color: #444444;
+  padding: 12px 30px;
 }
 
 .order__order-form {
@@ -23,7 +27,7 @@
 .order__relation {
   font-size: 17px;
   line-height: 18px;
-  font-weight: bold;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   color: #000000;
 }
 
@@ -31,6 +35,7 @@
   position: relative;
   border: none;
   border-top: 1px solid #63d1bb;
+  padding: 0 30px;
 
   &::before {
     content: "";
@@ -47,11 +52,13 @@
 .order__color-title,
 .order__contacts-title {
   font-size: 17px;
-  line-height: 17px;
+  line-height: 16px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   text-transform: uppercase;
   color: #63d1bb;
-  padding-left: 5px;
+  padding-left: 0;
   padding-right: 20px;
+  margin-bottom: 25px;
 }
 
 .order__type,
@@ -59,6 +66,14 @@
 .order__contacts {
   display: flex;
   flex-direction: column;
+}
+
+.order__type {
+  margin-bottom: 27px;
+}
+
+.order__color {
+  margin-bottom: 5px;
 }
 
 .order__field-type,
@@ -69,16 +84,24 @@
 .order__relation-type,
 .order__relation-color {
   position: relative;
-  padding: 10px 0 10px 40px;
+  padding: 10px 0 15px 60px;
+}
+
+.order__relation-color {
+  padding-bottom: 35px;
+}
+
+.order__color-tiffany {
+  padding-bottom: 28px;
 }
 
 .order__relation-type::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 1px;
   left: 1px;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   box-shadow: 0 0 0 2px #000000;
   border: 7px solid white;
@@ -92,10 +115,10 @@
 .order__relation-color::before {
   content: "";
   position: absolute;
-  top: 10px;
-  left: 1px;
-  width: 30px;
-  height: 30px;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
   border: 2px solid #444444;
   box-sizing: border-box;
 }
@@ -113,7 +136,25 @@
 }
 
 .order__relation-contacts {
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   padding: 15px 0;
+}
+
+.order__contacts-name {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.order__contacts-surname {
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.order__contacts-patronymic {
+  padding-top: 23px;
+  padding-bottom: 10px;
 }
 
 .order__field-contacts {
@@ -131,50 +172,71 @@
   color: #63d1bb;
 }
 
-.order__contacts-tel::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 35px;
-  width: 100%;
-  height: 10px;
-  border-bottom: 2px solid #63d1bb;
-  transform: scale(0.9);
-  z-index: -1;
+.order__contacts-tel {
+  padding-top: 32px;
+  padding-bottom: 17px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 100%;
+    height: 10px;
+    border-bottom: 2px solid #63d1bb;
+    transform: scale(0.77);
+    z-index: -1;
+  }
 }
 
-.order__contacts-email::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 50px;
-  width: 100%;
-  height: 10px;
-  border-bottom: 2px solid #63d1bb;
-  transform: scale(0.8);
-  z-index: -1;
+.order__contacts-email {
+  padding-top: 32px;
+  padding-bottom: 17px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 100%;
+    height: 10px;
+    border-bottom: 2px solid #63d1bb;
+    transform: scale(0.77);
+    z-index: -1;
+  }
 }
 
-.order__contacts-description::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 50px;
-  width: 100%;
-  height: 10px;
-  border-bottom: 2px solid #63d1bb;
-  transform: scale(0.8);
-  z-index: -1;
+.order__contacts-description {
+  padding-top: 32px;
+  padding-bottom: 22px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 100%;
+    height: 10px;
+    border-bottom: 2px solid #63d1bb;
+    transform: scale(0.77);
+    z-index: -1;
+  }
 }
 
 .order__field-description {
-  width: 100%;
+  width: 258px;
+  height: 142px;
+  border: 2px solid #444444;
+  padding: 15px 15px;
+  box-sizing: border-box;
 }
 
 .order__contacts-hint {
   font-size: 14px;
   line-height: 16px;
   color: #444444;
+  padding-left: 30px;
+  padding-bottom: 20px;
 }
 
 .order__contacts-btn {
@@ -182,10 +244,11 @@
   font-size: 17px;
   line-height: 17px;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   color: #444444;
   padding: 15px 45px;
   background-color: transparent;
   border: 2px solid #444444;
   margin: 0 auto;
+  margin-bottom: 35px;
 }

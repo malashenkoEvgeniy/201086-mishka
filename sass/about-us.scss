@@ -1,8 +1,8 @@
 .about-us {
-  padding: 30px;
+  padding: 6px 30px;
   font-size: 17px;
   line-height: 20px;
-  font-weight: bold;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
 }
 
 .about-us__title {
@@ -19,55 +19,60 @@
 .about-us__list-items {
   position: relative;
   display: block;
-  padding-top: 80px;
+  padding-top: 66px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 20px;
-    left: 10px;
+    top: 10px;
+    left: 0;
     width: 55px;
     height: 55px;
   }
 }
 
 .about-us__first {
-  width: 170px;
+  width: 180px;
+  padding-bottom: 17px;
 
   &::before {
-    background: transparent url("../img/icon-feature-flower.svg") no-repeat;
+    background: transparent url("../img/icon-feature-flower.svg") no-repeat 10px 1px;
   }
 }
 
 .about-us__second {
   width: 200px;
+  padding-bottom: 17px;
 
   &::before {
-    background: transparent url("../img/icon-feature-money.svg") no-repeat;
+    background: transparent url("../img/icon-feature-money.svg") no-repeat 0 2px;
   }
 }
 
 .about-us__third {
   width: 180px;
+  padding-bottom: 17px;
 
   &::before {
-    background: transparent url("../img/icon-feature-heart.svg") no-repeat;
+    background: transparent url("../img/icon-feature-heart.svg") no-repeat 6px 9px;
   }
 }
 
 .about-us__fourth {
-  width: 200px;
+  width: 220px;
+  padding-bottom: 17px;
 
   &::before {
-    background: transparent url("../img/icon-feature-ball.svg") no-repeat;
+    background: transparent url("../img/icon-feature-ball.svg") no-repeat 3px 6px;
   }
 }
 
 .about-us__fifth {
   width: 280px;
+  padding-bottom: 17px;
 
   &::before {
-    background: transparent url("../img/icon-feature-rocket.svg") no-repeat;
+    background: transparent url("../img/icon-feature-rocket.svg") no-repeat -1px 6px;
   }
 }
 
@@ -75,6 +80,7 @@
   width: 200px;
 
   &::before {
-    background: transparent url("../img/icon-feature-gift.svg") no-repeat;
+    background: transparent url("../img/icon-feature-gift.svg") no-repeat
+  1px 3px;
   }
 }

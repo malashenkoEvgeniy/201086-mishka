@@ -11,16 +11,18 @@ $greenFon: #63d1bb;
 
 .categories__item:first-child {
   min-height: 355px;
-  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat;
-  background-size: cover;
-  padding-top: 75px;
+  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat 50% -35px;
+  padding-top: 50px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 27px;
+  line-height: 30px;
   box-sizing: border-box;
   text-align: center;
 }
 
 .categories__item:nth-child(2) {
   position: relative;
-  transform: translateY(-90px);
+  transform: translateY(-110px);
   width: 100%;
   background-color: $greenFon;
   z-index: 1;
@@ -36,7 +38,7 @@ $greenFon: #63d1bb;
 
 .categories__item:nth-child(3) {
   position: relative;
-  transform: translateY(-90px);
+  transform: translateY(-110px);
   width: 100%;
   background-color: darken($greenFon, 10%);
   z-index: 1;
@@ -56,17 +58,18 @@ $greenFon: #63d1bb;
   vertical-align: top;
   width: 110px;
   padding: 30px;
+  padding-top: 25px;
   box-sizing: border-box;
   color: #ffffff;
   font-size: 19px;
   line-height: 24px;
-  font-weight: bold;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
 
   &::before {
     content: "";
     position: absolute;
     top: 20px;
-    right: -150%;
+    right: -175px;
     width: 40px;
     height: 62px;
   }
@@ -81,7 +84,7 @@ $greenFon: #63d1bb;
   content: "";
   position: absolute;
   top: 20px;
-  right: -160%;
+  right: -185px;
   width: 60px;
   height: 62px;
   background: transparent url("../img/icon-toy-green.svg") no-repeat;
