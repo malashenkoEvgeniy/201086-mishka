@@ -8,6 +8,10 @@
   padding: 30px;
   background-color: #ffffff;
   box-sizing: border-box;
+
+  &--active {
+    display: block;
+  }
 }
 
 .modal__block {
