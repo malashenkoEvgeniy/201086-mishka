@@ -36,8 +36,9 @@
 }
 
 .modal__wrap {
-  padding: 30px;
-  text-align: center;
+ display: flex;
+ justify-content: flex-start;
+ margin-left: 20px;
   margin-bottom: 20px;
 }
 
