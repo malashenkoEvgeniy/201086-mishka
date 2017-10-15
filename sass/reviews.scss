@@ -86,8 +86,6 @@ $desktop-width: 1150px;
   text-align: center;
 }
 
-
-
 @media (min-width: $tablet-width) {
   .reviews {
     position: relative;
@@ -131,9 +129,7 @@ $desktop-width: 1150px;
     right: 1px;
     top: 70px;
     width: 130px;
-
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -160,7 +156,5 @@ $desktop-width: 1150px;
     right: 1px;
     top: 70px;
     width: 130px;
-
   }
-
 }
