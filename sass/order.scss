@@ -340,13 +340,16 @@
     margin-top: 20px;
   }
 
+  .order__btn-wrap {
+    position: relative;
+  }
+
   .order__contacts-btn {
     position: absolute;
     margin-right: 400px;
-    bottom: -640px;
+    bottom: -20px;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .order {
@@ -412,7 +415,6 @@
 
   .order__color {
     width: 1050px;
-    height: 220px;
     background-color: #f1f1f1;
     flex-wrap: wrap;
   }
@@ -443,6 +445,5 @@
   .order__contacts-btn {
     position: absolute;
     margin-right: 400px;
-    bottom: -1040px;
   }
 }
