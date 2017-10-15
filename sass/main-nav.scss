@@ -3,6 +3,7 @@ $desktop-width: 1200px;
 
 .main-nav {
   position: relative;
+  width: 320px;
 }
 
 .main-nav__btn {
@@ -72,11 +73,22 @@ $desktop-width: 1200px;
   position: absolute;
   top: 1px;
   left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
+    width: auto;
     margin-left: auto;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    margin: 0 auto;
   }
 
   .main-nav__btn {
@@ -85,5 +97,11 @@ $desktop-width: 1200px;
 
   .main-nav__list {
     position: static;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    margin: 0;
   }
 }

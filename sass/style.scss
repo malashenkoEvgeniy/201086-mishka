@@ -1,4 +1,5 @@
 @import "fonts";
+@import "scaffolding";
 @import "page-header";
 @import "main-nav";
 @import "site-list";
@@ -13,27 +14,3 @@
 @import "modal";
 @import "catalog";
 @import "order";
-
-$tablet-width: 768px;
-$desktop-width: 1200px;
-
-
-body {
-  min-width: 320px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  padding: 0;
-  margin: 0 auto;
-}
-
-
-@media (min-width: $tablet-width) {
-  body {
-    max-width: $tablet-width;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  body {
-    max-width: $desktop-width;
-  }
-}

@@ -1,11 +1,14 @@
+$tablet-width: 768px;
+$desktop-width: 1150px;
+
 .reviews {
   padding: 30px;
   font-size: 15px;
   line-height: 30px;
   color: #444444;
   border-bottom: 10px solid gray;
-  /*border-image-source: url("");*/
-  border-image-slice: 50;
+  /*border-image-source: url("");
+  border-image-slice: 50;*/
   padding-bottom: 40px;
 }
 
@@ -66,16 +69,8 @@
 
 .revievs__arrov-forward {
   font-size: 0;
-  padding: 15px 65px;
+  padding: 15px 35px;
   background: gray /*url("") no-repeat 40px -1px*/;
-}
-
-.revievs__togle-link:hover .revievs__arrov {
-  opacity: 0.6;
-}
-
-.revievs__togle-link:active .revievs__arrov {
-  opacity: 0.3;
 }
 
 .reviews__btn {
@@ -89,15 +84,83 @@
   border: 2px solid #444444;
   padding: 15px 30px;
   text-align: center;
+}
 
-  &:hover {
-    color: #ffffff;
-    background-color: #444444;
+
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 668px;
+    height: 455px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 350px;
+      height: 455px;
+      background: gray url("../img/review@1x.jpg") no-repeat;
+      z-index: -10;
+    }
   }
 
-  &:active {
-    color: #ffffff;
-    background-color: #444444;
-    opacity: 0.3;
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
   }
+
+  .reviews__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .revievs__togle {
+    position: absolute;
+    right: 1px;
+    bottom: 100px;
+    width: 167px;
+  }
+
+  .reviews__btn {
+    position: absolute;
+    right: 1px;
+    top: 70px;
+    width: 130px;
+
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: 1050px;
+    height: 536px;
+    margin: auto;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .revievs__togle {
+    position: absolute;
+    right: 1px;
+    bottom: 100px;
+    width: 167px;
+  }
+
+  .reviews__btn {
+    position: absolute;
+    right: 1px;
+    top: 70px;
+    width: 130px;
+
+  }
+
 }

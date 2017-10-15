@@ -1,18 +1,19 @@
+$tablet-width: 768px;
+$desktop-width: 1150px;
+
 .social__list {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   list-style: none;
-  width: 170px;
   box-sizing: border-box;
+  margin-bottom: 80px;
 }
 
 .social__link {
   position: relative;
-  padding: 15px;
-  margin-right: 28px;
-  margin-bottom: 30px;
   font-size: 0;
+  margin-right: 40px;
 
   &::before {
     content: "";
@@ -62,4 +63,10 @@
 .social__link--twitter:active::before {
   background: transparent url("../img/icon-twitter-green.svg") no-repeat;
   opacity: 0.3;
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    margin-right: 300px;
+  }
 }

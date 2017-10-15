@@ -1,0 +1,23 @@
+
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
+
+body {
+  min-width: 320px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    min-width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    min-width: $desktop-width;
+  }
+}

@@ -1,3 +1,6 @@
+$tablet-width: 768px;
+$desktop-width: 1150px;
+
 .about-us {
   padding: 6px 30px;
   font-size: 17px;
@@ -81,5 +84,112 @@
 
   &::before {
     background: transparent url("../img/icon-feature-gift.svg") no-repeat  1px 3px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    margin: 30px auto;
+    width: 668px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: 30px;
+  }
+
+  .about-us__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 668px;
+    margin: auto;
+    height: 520px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about-us__list-items {
+    position: relative;
+    display: block;
+    padding-top: 66px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 55px;
+      height: 55px;
+    }
+  }
+
+  .about-us__first {
+    width: 190px;
+    padding-bottom: 17px;
+
+    &::before {
+      background: transparent url("../img/icon-feature-flower.svg") no-repeat 10px 1px;
+    }
+  }
+
+  .about-us__second {
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    padding: 6px 30px;
+    font-size: 17px;
+    line-height: 20px;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+  }
+
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about-us__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 520px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about-us__list-items {
+    position: relative;
+    display: block;
+    padding-top: 66px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 55px;
+      height: 55px;
+    }
+  }
+
+  .about-us__first {
+    width: 180px;
+    padding-bottom: 17px;
+
+    &::before {
+      background: transparent url("../img/icon-feature-flower.svg") no-repeat 10px 1px;
+    }
+  }
+
+  .about-us__second {
+    padding-right: 90px;
   }
 }
