@@ -24,6 +24,8 @@ $desktop-width: 1150px;
 
 @media (min-width: $tablet-width) {
   .page-header {
+    width: 668px;
+    margin: 0 auto;
     justify-content: flex-start;
     flex-direction: row;
     align-items: center;

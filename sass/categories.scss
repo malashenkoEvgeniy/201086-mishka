@@ -27,7 +27,7 @@ $desktop-width: 1200px;
 
 .categories__wrap {
   position: relative;
-  top: -30px;
+  top: -100px;
   display: flex;
   flex-direction: column;
   flex-basis: 320px;
@@ -84,10 +84,7 @@ $desktop-width: 1200px;
   }
 
   .categories__caption {
-    height: $tablet-width;
-    background-color: #f9f9f9;
-    margin: 0 auto;
-    padding: 150px 250px;
+    width: $tablet-width;
   }
 
   .categories__banner {
@@ -111,12 +108,13 @@ $desktop-width: 1200px;
   }
 
   .categories__item-link {
-    width: 50%;
+    width: 334px;
     height: 120px;
   }
 
   .categories__interior-item {
     background-color: #63d1bb;
+    margin-left: auto;
   }
 
   .categories__kids-toys {
@@ -138,7 +136,13 @@ $desktop-width: 1200px;
 
 @media (min-width: $desktop-width) {
   .categories {
-    width: 100%;
+    width: 1050px;
+  }
+
+  .categories__caption {
+    width: $desktop-width;
+    background-color: #f9f9f9;
+    margin: 0 auto;
   }
 
   .categories__banner {
@@ -155,5 +159,10 @@ $desktop-width: 1200px;
 
   .categories__wrap {
     width: 1050px;
+  }
+
+  .categories__item-link {
+    width: 525px;
+    height: 120px;
   }
 }

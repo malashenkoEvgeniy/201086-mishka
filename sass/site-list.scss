@@ -31,6 +31,7 @@ $desktop-width: 1200px;
   line-height: 24px;
   text-decoration: none;
   padding: 30px 0 30px 75px;
+  box-sizing: border-box;
 }
 
 .site-list__item:nth-child(3) .site-list__item-link {
@@ -58,15 +59,19 @@ $desktop-width: 1200px;
   opacity: 0.3;
 }
 
+.site-list__item:nth-child(4) {
+  margin-left: 30px;
+}
 
 .site-list__item:nth-child(4) .site-list__item-link {
+  padding-left: 0;
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
     top: 30px;
-    left: 30px;
+    left: -30px;
     width: 20px;
     height: 20px;
     background: transparent url("../img/icon-cart.svg") no-repeat;
@@ -102,8 +107,6 @@ $desktop-width: 1200px;
   .site-list {
     display: flex;
     justify-content: flex-start;
-    width: 350px;
-    margin-right: 60px;
     margin-left: auto;
   }
 
@@ -133,7 +136,7 @@ $desktop-width: 1200px;
     display: flex;
     justify-content: flex-start;
     top: 85px;
-    left: -80px;
+    left: -90px;
     width: 668px;
     margin: 0;
     padding: 0;
