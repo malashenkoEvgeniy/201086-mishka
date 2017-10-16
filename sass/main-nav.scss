@@ -3,7 +3,7 @@ $desktop-width: 1200px;
 
 .main-nav {
   position: relative;
-  width: 320px;
+  width: 260px;
 }
 
 .main-nav__btn {
@@ -80,7 +80,7 @@ $desktop-width: 1200px;
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: auto;
+    width: 668px;
     margin-left: auto;
   }
 

@@ -26,6 +26,8 @@ $desktop-width: 1200px;
 }
 
 .categories__wrap {
+  position: relative;
+  top: -30px;
   display: flex;
   flex-direction: column;
   flex-basis: 320px;
@@ -58,20 +60,19 @@ $desktop-width: 1200px;
     content: "";
     position: absolute;
     top: 20px;
-    right: -85px;
-    width: 40px;
-    height: 62px;
+    right: -100px;
+    width: 60px;
+    height: 70px;
   }
 
-  .categories__interior-link::before {
-    background-color: blue;
-    /*background: red url("../img/icon-interior-green.svg") no-repeat;
-    opacity: 0.5;*/
+  &.categories__interior-link::before {
+    background: transparent  url("../img/icon-interior-green.svg") no-repeat;
+    opacity: 0.5;
   }
 
-  .categories__child-link::before {
-    background: red /*url("../img/icon-toy-green.svg") no-repeat;
-    opacity: 0.5*/;
+  &.categories__child-link::before {
+    background: transparent url("../img/icon-toy-green.svg") no-repeat 50%;
+    opacity: 0.5;
   }
 }
 
@@ -82,9 +83,16 @@ $desktop-width: 1200px;
     margin: 0 auto;
   }
 
+  .categories__caption {
+    height: $tablet-width;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    padding: 150px 250px;
+  }
+
   .categories__banner {
     display: block;
-    margin: 20px auto;
+    margin: 50px auto;
     width: 500px;
     font-size: 43px;
     line-height: 50px;
@@ -130,7 +138,7 @@ $desktop-width: 1200px;
 
 @media (min-width: $desktop-width) {
   .categories {
-    width: $desktop-width;
+    width: 100%;
   }
 
   .categories__banner {

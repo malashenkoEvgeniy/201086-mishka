@@ -256,11 +256,12 @@
 
 @media (min-width: $tablet-width) {
   .order {
-    width: 668px;
+    width: $tablet-width;
     margin: 0 auto;
   }
 
   .order__title {
+    width: $tablet-width;
     font-size: 43px;
     line-height: 50px;
   }
@@ -278,7 +279,6 @@
   .order__relation {
     font-size: 19px;
     line-height: 18px;
-    margin-left: 167px;
   }
 
   .order__block {
@@ -306,7 +306,6 @@
 
   .order__contacts {
     width: 501px;
-    margin-left: 167px;
   }
 
   .order__type {
@@ -315,6 +314,16 @@
 
   .order__color {
     margin-bottom: 5px;
+  }
+
+  .order__color-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .order__color .order__relation {
+    width: 200px;
   }
 
   .order__contacts-tel,
@@ -353,11 +362,12 @@
 
 @media (min-width: $desktop-width) {
   .order {
-    width: 1050px;
+    width: $desktop-width;
     margin: 0 auto;
   }
 
   .order__title {
+    width: $desktop-width;
     font-size: 53px;
     line-height: 57px;
     text-align: center;
@@ -378,7 +388,6 @@
   .order__relation {
     font-size: 19px;
     line-height: 18px;
-    margin-left: 167px;
   }
 
   .order__block {
@@ -396,27 +405,36 @@
     left: -140px;
   }
 
-  .order__type,
-  .order__color {
+  .order__type {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 668px;
+    padding: 30px;
+  }
+
+  .order__type .order__relation {
+    margin-left: 300px;
+  }
+
+  .order__color {
+    width: $desktop-width;
+    padding: 30px;
+    background-color: #f1f1f1;
+    flex-wrap: wrap;
+  }
+
+  .order__color-wrap {
+    margin-left: 300px;
+  }
+
+  .order__color .order__relation {
+    width: 200px;
   }
 
   .order__contacts {
     width: 501px;
     margin-left: 167px;
-  }
-
-  .order__type {
-    margin-bottom: 27px;
-  }
-
-  .order__color {
-    width: 1050px;
-    background-color: #f1f1f1;
-    flex-wrap: wrap;
   }
 
   .order__contacts-tel,

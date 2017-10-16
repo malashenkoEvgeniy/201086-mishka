@@ -3,6 +3,7 @@ $desktop-width: 1150px;
 
 .page-footer {
   width: 320px;
+  margin: 0 auto;
   background-color: #f1f1f1;
 }
 
@@ -39,7 +40,7 @@ $desktop-width: 1150px;
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    width: $desktop-width;
+    width: 100%;
     margin: auto;
   }
 
